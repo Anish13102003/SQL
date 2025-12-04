@@ -5,6 +5,7 @@ id int auto_increment,
 cast_id int primary key ,
 cast_name varchar(40),
 cast_role varchar(40));
+truncate table casting;
 ALTER TABLE casting
 DROP COLUMN id;
 
@@ -30,6 +31,7 @@ technician_id int,
 name varchar(40),
 work_type varchar(50),
 work_date date);
+truncate table technician;
 insert into casting values(111,'vijay','hero'),(222,'samantha','heroine'),(333,'vadivel','comedy'),(444,'daniel','villain');
 insert into material values(1,'camera','2d_lens'),(2,'camera-stand','holder');
 insert into salary_maintainence values(101,201,'vijay',10-11-2005),(102,202,'samantha',25-1-2015),(103,203,'daniel',5-12-2010);
